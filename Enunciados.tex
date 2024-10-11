@@ -1,0 +1,131 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Enunciados},
+  pdfauthor={Alfonso Lopez Santiago},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Enunciados}
+\author{Alfonso Lopez Santiago}
+\date{2024-10-11}
+
+\begin{document}
+\maketitle
+
+\#PROBLEMA 2 Problema de estrategia en un partido de fútbol
+
+Un equipo de fútbol está en los últimos 10 minutos de un partido muy
+cerrado y debe elegir una estrategia para atacar. El entrenador tiene
+tres alternativas tácticas, cada una con diferentes probabilidades de
+éxito dependiendo de lo que el equipo rival haga en esos momentos
+decisivos.
+
+Estrategias disponibles: 1. Atacar por las bandas 2. Atacar por el
+centro 3. Jugar balones largos (pases directos a los delanteros)
+
+Escenarios posibles: Escenario 1: El equipo rival se queda con un
+jugador menos (expulsión) Escenario 2: El equipo rival juega a la
+defensiva y cierra los espacios Escenario 3: El equipo rival está
+buscando atacar y deja huecos en su defensa Escenario 4: El equipo rival
+presiona en todo el campo (presión alta)
+
+Probabilidades de éxito para cada estrategia en cada escenario: - Atacar
+por las bandas: - Escenario 1: 85\% - Escenario 2: 40\% - Escenario 3:
+80\% - Escenario 4: 50\%
+
+\begin{itemize}
+\tightlist
+\item
+  Atacar por el centro:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Escenario 1: 50\%
+  \item
+    Escenario 2: 30\%
+  \item
+    Escenario 3: 90\%
+  \item
+    Escenario 4: 60\%
+  \end{itemize}
+\item
+  Jugar balones largos:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Escenario 1: 60\%
+  \item
+    Escenario 2: 70\%
+  \item
+    Escenario 3: 70\%
+  \item
+    Escenario 4: 80\%
+  \end{itemize}
+\end{itemize}
+
+Pregunta: Si no se puede prever con certeza cuál será el escenario en
+los últimos 10 minutos y todos los escenarios son igualmente probables,
+¿qué estrategia debería usar el entrenador para maximizar las
+probabilidades de éxito?
+
+\end{document}
